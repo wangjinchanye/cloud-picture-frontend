@@ -1,0 +1,70 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e5]:
+    - generic [ref=f1e8]:
+      - link "logo 云图库" [ref=f1e10] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e11]:
+          - img "logo" [ref=f1e12]
+          - generic [ref=f1e13]: 云图库
+      - menu [ref=f1e15]:
+        - menuitem "home 主页" [ref=f1e16] [cursor=pointer]:
+          - img "home" [ref=f1e17]
+          - generic [ref=f1e20]: 主页
+        - menuitem "创建图片" [ref=f1e21] [cursor=pointer]
+        - menuitem "用户管理" [ref=f1e23] [cursor=pointer]
+        - menuitem "图片管理" [ref=f1e25] [cursor=pointer]
+        - menuitem "空间管理" [ref=f1e27] [cursor=pointer]
+      - generic [ref=f1e29]: 无名
+    - generic [ref=f1e36]:
+      - complementary [ref=f1e38]:
+        - menu [ref=f1e40]:
+          - menuitem "picture 公共图库" [ref=f1e41] [cursor=pointer]:
+            - img "picture" [ref=f1e42]
+            - generic [ref=f1e45]: 公共图库
+          - menuitem "user 我的空间" [ref=f1e46] [cursor=pointer]:
+            - img "user" [ref=f1e47]
+            - generic [ref=f1e50]: 我的空间
+      - main [ref=f1e51]:
+        - generic [ref=f1e177]:
+          - heading "修改图片" [level=2] [ref=f1e178]
+          - generic [ref=f1e179]:
+            - tablist [ref=f1e180]:
+              - generic [ref=f1e182]:
+                - tab "文件上传" [selected] [ref=f1e184] [cursor=pointer]
+                - tab "URL 上传" [ref=f1e186] [cursor=pointer]
+            - tabpanel "文件上传" [ref=f1e189]:
+              - button [ref=f1e193] [cursor=pointer]:
+                - img "avatar" [ref=f1e194]
+          - generic [ref=f1e196]:
+            - button "edit 编辑图片" [ref=f1e198] [cursor=pointer]:
+              - img "edit" [ref=f1e199]
+              - generic [ref=f1e202]: 编辑图片
+            - button "fullscreen AI 扩图" [ref=f1e204] [cursor=pointer]:
+              - img "fullscreen" [ref=f1e205]
+              - generic [ref=f1e208]: AI 扩图
+          - generic [ref=f1e209]:
+            - generic [ref=f1e211]:
+              - generic "名称" [ref=f1e213]
+              - textbox "名称" [ref=f1e217]:
+                - /placeholder: 请输入名称
+                - text: 鸣潮9
+            - generic [ref=f1e219]:
+              - generic "简介" [ref=f1e221]
+              - textbox "简介" [ref=f1e226]:
+                - /placeholder: 请输入简介
+            - generic [ref=f1e228]:
+              - generic "分类" [ref=f1e230]
+              - generic [ref=f1e235]:
+                - combobox "分类" [ref=f1e237]
+                - generic: 请输入分类
+            - generic [ref=f1e239]:
+              - generic "标签" [ref=f1e241]
+              - generic [ref=f1e246]:
+                - combobox "标签" [ref=f1e250]
+                - generic: 请输入标签
+            - button "创 建" [ref=f1e256] [cursor=pointer]
+    - link "编程导航 by 程序员鱼皮" [ref=f1e164] [cursor=pointer]:
+      - /url: https://www.codefather.cn
+  - generic [ref=f1e165]:
+    - generic "Toggle devtools panel" [ref=f1e166] [cursor=pointer]
+    - generic "Toggle Component Inspector" [ref=f1e172] [cursor=pointer]

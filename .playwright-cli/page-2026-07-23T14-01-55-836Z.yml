@@ -1,0 +1,120 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e8]:
+      - link "logo 云图库" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e11]:
+          - img "logo" [ref=e12]
+          - generic [ref=e13]: 云图库
+      - menu [ref=e15]:
+        - menuitem "home 主页" [ref=e16] [cursor=pointer]:
+          - img "home" [ref=e17]
+          - generic [ref=e20]: 主页
+        - menuitem "创建图片" [ref=e21] [cursor=pointer]
+      - link "登 录" [ref=e26] [cursor=pointer]:
+        - /url: /user/login
+    - main [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e34]:
+          - textbox "从海量图片中搜索" [ref=e35]
+          - button "搜 索" [ref=e37] [cursor=pointer]
+        - generic [ref=e39]:
+          - tablist [ref=e40]:
+            - generic [ref=e42]:
+              - tab "全部" [selected] [ref=e44] [cursor=pointer]
+              - tab "模板" [ref=e46] [cursor=pointer]
+              - tab "电商" [ref=e48] [cursor=pointer]
+              - tab "表情包" [ref=e50] [cursor=pointer]
+              - tab "素材" [ref=e52] [cursor=pointer]
+              - tab "海报" [ref=e54] [cursor=pointer]
+          - generic:
+            - generic:
+              - tabpanel "全部"
+        - generic [ref=e55]:
+          - text: 标签：
+          - generic [ref=e56]:
+            - generic [ref=e57]: 热门
+            - generic [ref=e59]: 搞笑
+            - generic [ref=e61]: 生活
+            - generic [ref=e63]: 高清
+            - generic [ref=e65]: 艺术
+            - generic [ref=e67]: 校园
+            - generic [ref=e69]: 背景
+            - generic [ref=e71]: 简历
+            - generic [ref=e73]: 创意
+        - generic [ref=e79]:
+          - generic [ref=e83] [cursor=pointer]:
+            - img "鸣潮9" [ref=e85]
+            - generic [ref=e88]:
+              - generic [ref=e89]: 鸣潮9
+              - generic [ref=e90]: 默认
+          - generic [ref=e96] [cursor=pointer]:
+            - img "鸣潮10" [ref=e98]
+            - generic [ref=e101]:
+              - generic [ref=e102]: 鸣潮10
+              - generic [ref=e103]: 默认
+          - generic [ref=e109] [cursor=pointer]:
+            - img "鸣潮7" [ref=e111]
+            - generic [ref=e114]:
+              - generic [ref=e115]: 鸣潮7
+              - generic [ref=e116]: 默认
+          - generic [ref=e122] [cursor=pointer]:
+            - img "鸣潮8" [ref=e124]
+            - generic [ref=e127]:
+              - generic [ref=e128]: 鸣潮8
+              - generic [ref=e129]: 默认
+          - generic [ref=e135] [cursor=pointer]:
+            - img "鸣潮4" [ref=e137]
+            - generic [ref=e140]:
+              - generic [ref=e141]: 鸣潮4
+              - generic [ref=e142]: 默认
+          - generic [ref=e148] [cursor=pointer]:
+            - img "鸣潮5" [ref=e150]
+            - generic [ref=e153]:
+              - generic [ref=e154]: 鸣潮5
+              - generic [ref=e155]: 默认
+          - generic [ref=e161] [cursor=pointer]:
+            - img "鸣潮6" [ref=e163]
+            - generic [ref=e166]:
+              - generic [ref=e167]: 鸣潮6
+              - generic [ref=e168]: 默认
+          - generic [ref=e174] [cursor=pointer]:
+            - img "鸣潮2" [ref=e176]
+            - generic [ref=e179]:
+              - generic [ref=e180]: 鸣潮2
+              - generic [ref=e181]: 默认
+          - generic [ref=e187] [cursor=pointer]:
+            - img "鸣潮3" [ref=e189]
+            - generic [ref=e192]:
+              - generic [ref=e193]: 鸣潮3
+              - generic [ref=e194]: 默认
+          - generic [ref=e200] [cursor=pointer]:
+            - img "鸣潮1" [ref=e202]
+            - generic [ref=e205]:
+              - generic [ref=e206]: 鸣潮1
+              - generic [ref=e207]: 默认
+          - generic [ref=e213] [cursor=pointer]:
+            - img "头像" [ref=e215]
+            - generic [ref=e218]:
+              - generic [ref=e219]: 头像
+              - generic [ref=e220]: 默认
+          - generic [ref=e226] [cursor=pointer]:
+            - img "汝窑马克杯" [ref=e228]
+            - generic [ref=e231]:
+              - generic [ref=e232]: 汝窑马克杯
+              - generic [ref=e233]: 默认
+        - list [ref=e236]:
+          - listitem "Previous Page" [ref=e237]:
+            - button [disabled] [ref=e238]:
+              - img "left" [ref=e239]
+          - listitem "1" [ref=e242] [cursor=pointer]
+          - listitem "2" [ref=e244] [cursor=pointer]
+          - listitem "3" [ref=e246] [cursor=pointer]
+          - listitem "Next Page" [ref=e248] [cursor=pointer]:
+            - button [ref=e249]:
+              - img "right" [ref=e250]
+    - link "编程导航 by 程序员鱼皮" [ref=e254] [cursor=pointer]:
+      - /url: https://www.codefather.cn
+  - generic [ref=e255]:
+    - generic "Toggle devtools panel" [ref=e256] [cursor=pointer]
+    - generic "Toggle Component Inspector" [ref=e262] [cursor=pointer]

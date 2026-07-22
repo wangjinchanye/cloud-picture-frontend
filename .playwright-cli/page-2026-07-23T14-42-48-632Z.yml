@@ -1,0 +1,45 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e5]:
+    - generic [ref=f1e8]:
+      - link "logo 云图库" [ref=f1e10] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e11]:
+          - img "logo" [ref=f1e12]
+          - generic [ref=f1e13]: 云图库
+      - menu [ref=f1e15]:
+        - menuitem "home 主页" [ref=f1e16] [cursor=pointer]:
+          - img "home" [ref=f1e17]
+          - generic [ref=f1e20]: 主页
+        - menuitem "创建图片" [ref=f1e21] [cursor=pointer]
+        - menuitem "用户管理" [ref=f1e23] [cursor=pointer]
+        - menuitem "图片管理" [ref=f1e25] [cursor=pointer]
+        - menuitem "空间管理" [ref=f1e27] [cursor=pointer]
+      - generic [ref=f1e29]: 无名
+    - generic [ref=f1e36]:
+      - complementary [ref=f1e38]:
+        - menu [ref=f1e40]:
+          - menuitem "picture 公共图库" [ref=f1e41] [cursor=pointer]:
+            - img "picture" [ref=f1e42]
+            - generic [ref=f1e45]: 公共图库
+          - menuitem "user 我的空间" [ref=f1e46] [cursor=pointer]:
+            - img "user" [ref=f1e47]
+            - generic [ref=f1e50]: 我的空间
+      - main [ref=f1e51]:
+        - generic [ref=f1e543]:
+          - heading "修改图片" [level=2] [ref=f1e544]
+          - generic [ref=f1e545]:
+            - text: 保存至空间：
+            - link "2079459745453940738" [ref=f1e546] [cursor=pointer]:
+              - /url: /space/2079459745453940738
+          - generic [ref=f1e547]:
+            - tablist [ref=f1e548]:
+              - generic [ref=f1e550]:
+                - tab "文件上传" [selected] [ref=f1e552] [cursor=pointer]
+                - tab "URL 上传" [ref=f1e554] [cursor=pointer]
+            - tabpanel "文件上传" [ref=f1e557]:
+              - button "点击或拖拽上传图片" [ref=f1e561] [cursor=pointer]
+    - link "编程导航 by 程序员鱼皮" [ref=f1e164] [cursor=pointer]:
+      - /url: https://www.codefather.cn
+  - generic [ref=f1e165]:
+    - generic "Toggle devtools panel" [ref=f1e166] [cursor=pointer]
+    - generic "Toggle Component Inspector" [ref=f1e172] [cursor=pointer]

@@ -1,0 +1,34 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e5]:
+    - generic [ref=f1e8]:
+      - link "logo 云图库" [ref=f1e10] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e11]:
+          - img "logo" [ref=f1e12]
+          - generic [ref=f1e13]: 云图库
+      - menu [ref=f1e15]:
+        - menuitem "home 主页" [ref=f1e16] [cursor=pointer]:
+          - img "home" [ref=f1e17]
+          - generic [ref=f1e20]: 主页
+        - menuitem "创建图片" [ref=f1e21] [cursor=pointer]
+      - link "登 录" [ref=f1e26] [cursor=pointer]:
+        - /url: /user/login
+    - main [ref=f1e30]:
+      - generic [ref=f1e31]:
+        - heading "云图库 - 用户登录" [level=2] [ref=f1e32]
+        - generic [ref=f1e33]: 企业级智能协同云图库
+        - generic [ref=f1e34]:
+          - textbox "请输入账号" [ref=f1e40]
+          - generic [ref=f1e46]:
+            - textbox "请输入密码" [ref=f1e47]
+            - img "eye-invisible" [ref=f1e49] [cursor=pointer]
+          - generic [ref=f1e53]:
+            - text: 没有账号？
+            - link "去注册" [ref=f1e54] [cursor=pointer]:
+              - /url: /user/register
+          - button "登 录" [ref=f1e60] [cursor=pointer]
+    - link "编程导航 by 程序员鱼皮" [ref=f1e63] [cursor=pointer]:
+      - /url: https://www.codefather.cn
+  - generic [ref=f1e64]:
+    - generic "Toggle devtools panel" [ref=f1e65] [cursor=pointer]
+    - generic "Toggle Component Inspector" [ref=f1e71] [cursor=pointer]
