@@ -33,8 +33,8 @@
             <template v-if="showOp" #actions>
               <search-outlined @click="(e) => doSearch(picture, e)" />
               <share-alt-outlined @click="(e) => doShare(picture, e)" />
-              <edit-outlined @click="(e) => doEdit(picture, e)" />
-              <delete-outlined @click="(e) => doDelete(picture, e)" />
+              <edit-outlined v-if="canEdit" @click="(e) => doEdit(picture, e)" />
+              <delete-outlined v-if="canDelete" @click="(e) => doDelete(picture, e)" />
             </template>
           </a-card>
         </a-list-item>
@@ -54,19 +54,23 @@ import {
 import { deletePictureUsingPost } from '@/api/pictureController.ts'
 import { message } from 'ant-design-vue'
 import { ref } from 'vue'
-import ShareModal from "@/components/ShareModal.vue";
+import ShareModal from '@/components/ShareModal.vue'
 
 interface Props {
   dataList?: API.PictureVO[]
   loading?: boolean
   showOp?: boolean
   onReload?: () => void
+  canEdit?: boolean
+  canDelete?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
   dataList: () => [],
   loading: false,
   showOp: false,
+  canEdit: false,
+  canDelete: false,
 })
 
 const router = useRouter()
@@ -130,4 +134,3 @@ const doShare = (picture: API.PictureVO, e: Event) => {
 </script>
 
 <style scoped></style>
-

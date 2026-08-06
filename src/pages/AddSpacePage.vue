@@ -1,7 +1,7 @@
 <template>
   <div id="addSpacePage">
     <h2 style="margin-bottom: 16px">
-      {{ route.query?.id ? '修改空间' : '创建空间' }}
+      {{ route.query?.id ? '修改' : '创建' }}{{ SPACE_TYPE_MAP[spaceType] }}
     </h2>
     <!-- 空间信息表单 -->
     <a-form layout="vertical" :model="spaceForm" @finish="handleSubmit">
@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive, ref } from 'vue'
+import { computed, onMounted, reactive, ref } from 'vue'
 import { message } from 'ant-design-vue'
 import {
   addSpaceUsingPost,
@@ -47,13 +47,21 @@ import {
   updateSpaceUsingPost,
 } from '@/api/spaceController'
 import { useRoute, useRouter } from 'vue-router'
-import { SPACE_LEVEL_OPTIONS, SPACE_LEVEL_ENUM } from '@/constants/space'
+import { SPACE_LEVEL_OPTIONS, SPACE_LEVEL_ENUM, SPACE_TYPE_MAP, SPACE_TYPE_ENUM } from '@/constants/space'
 import { formatSize } from '../utils'
 import { updatePictureUsingPost } from '@/api/pictureController'
 
 const space = ref<API.SpaceVO>()
 const spaceForm = reactive<API.SpaceAddRequest | API.SpaceUpdateRequest>({})
 const loading = ref(false)
+
+// 空间类别
+const spaceType = computed(() => {
+  if (route.query?.type) {
+    return Number(route.query.type)
+  }
+  return SPACE_TYPE_ENUM.PRIVATE
+})
 
 const spaceLevelList = ref<API.SpaceLevel[]>([])
 
@@ -80,18 +88,19 @@ const router = useRouter()
 const handleSubmit = async (values: any) => {
   const spaceId = space.value?.id
   loading.value = true
-  let res;
+  let res
   // 更新
-  if(spaceId){
+  if (spaceId) {
     res = await updateSpaceUsingPost({
-        id: spaceId,
-        ...spaceForm,
+      id: spaceId,
+      ...spaceForm,
     })
-  }else{
+  } else {
     // 创建
     res = await addSpaceUsingPost({
-    ...spaceForm,
-  })
+      ...spaceForm,
+      spaceType: spaceType.value,
+    })
   }
   if (res.data.code === 0 && res.data.data) {
     message.success('操作成功')
